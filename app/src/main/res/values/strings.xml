@@ -1,0 +1,28 @@
+<resources>
+
+    <string name="C">C</string>
+    <string name="AC">AC</string>
+    <string name="BACK">BACK</string>
+    <string name="EQUALS">=</string>
+
+    <string name="ADD">+</string>
+    <string name="SUBTRACT">-</string>
+    <string name="DIVIDE">/</string>
+    <string name="MULTIPLY">*</string>
+    <string name="CHANGE_SIGN">+/-</string>
+    <string name="DOT">.</string>
+
+    <string name="app_name">Calculator</string>
+    <string name="SIN">SIN</string>
+    <string name="COS">COS</string>
+    <string name="TAN">TAN</string>
+    <string name="PERCENTAGE">%</string>
+    <string name="LN">LN</string>
+    <string name="LOG">LOG</string>
+    <string name="SQRT">SQRT</string>
+    <string name="X2">X^2</string>
+    <string name="XY">X^Y</string>
+
+    <string name="POWER_SYMBOL">^</string>
+
+</resources>
