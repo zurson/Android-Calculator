@@ -21,7 +21,8 @@ import java.util.Objects;
 
 public class SimpleCalculator extends AppCompatActivity implements View.OnClickListener {
 
-    public static final String ERROR_MESSAGE = "Error!";
+    protected static final String ERROR_MESSAGE = "Error!";
+    protected static final String FATAL_ERROR_MSG = "Fatal Error!";
     private TextView resultTv, solutionTv;
     protected final String TOO_LONG_MSG = "Too long!";
     protected final String MAX_INPUT_REACHED_MSG = "Max input reached!";
@@ -188,7 +189,7 @@ public class SimpleCalculator extends AppCompatActivity implements View.OnClickL
         if (dataToCalculate.isEmpty() || checkLastCharacter(dataToCalculate, getStringConstant(R.string.EQUALS)))
             return;
 
-        if (checkLastCharacter(dataToCalculate, getStringConstant(R.string.DOT))) {
+        if (checkLastCharacter(dataToCalculate, getStringConstant(R.string.DOT)) || checkLastCharacter(dataToCalculate, "0")) {
             Toast.makeText(this, INVALID_INPUT_MSG, Toast.LENGTH_SHORT).show();
             return;
         }

@@ -247,7 +247,7 @@ public class AdvancedCalculator extends SimpleCalculator {
         String textSecondNumber = getSecondNumberAsString(solution);
 
         if (textFirstNumber == null || textSecondNumber == null) {
-            Toast.makeText(this, "Err", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, FATAL_ERROR_MSG, Toast.LENGTH_SHORT).show();
             return;
         }
 
